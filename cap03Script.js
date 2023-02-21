@@ -8,13 +8,13 @@
 // console.log("El número mínimo es " + minimo(4,6))
 // console.log("El número mínimo es " + minimo(64,8))
 
-//Recursión
+//EsPar - USO DE RECURSION (función llama a otra función)
 
 // function esPar(n) {
 //   if (n == 0) return true;
 //   else if (n == 1) return false;
 //   else if (n < 0) return esPar(-n);
-//   else return esPar(n + 2);
+//   else return esPar(n - 2);
 // }
 
 // console.log(esPar(6));
@@ -22,30 +22,32 @@
 // console.log(esPar(-6));
 // console.log(esPar(-9));
 
-//CONTEO DE FRIJOLES
+//CONTEO DE CARACTERES
 
-// function contarFs(string) {
-//   for (let i = 0; i < string.lenght; i++) {
-//     if (string[i] == "F") return i;
-//     break;
+// function countChar(string, ch) {
+//   let contador = 0;
+//   for (let i = 0; i < string.length; i++) {
+//     if (string[i] == ch) {
+//       contador += 1;
+//     }
 //   }
-//   console.log(i);
+//   return contador;
 // }
 
-// contarFs("Estrofa");
+// console.log(countChar("Estrofa", "f"));
 
-function countChar(string, ch) {
-  let counted = 0;
-  for (let i = 0; i < string.length; i++) {
-    if (string[i] == ch) {
-      counted += 1;
-    }
-  }
-  return counted;
-}
+// function countChar(string, ch) {
+//   let counted = 0;
+//   for (let i = 0; i < string.length; i++) {
+//     if (string[i] == ch) {
+//       counted += 1;
+//     }
+//   }
+//   return counted;
+// }
 
-function countBs(string) {
-  return countChar(string, "B");
-}
+// function countBs(string) {
+//   return countChar(string, "B");
+// }
 
-console.log(countBs("BBC"));
+// console.log(countBs("BBC"));
